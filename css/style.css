@@ -140,7 +140,7 @@ main { flex: 1; padding-top: 5rem; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?w=1920&q=80') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1758524152745-bcb26ffb14a5?w=1920&q=80') center/cover no-repeat;
   opacity: 0.2;
 }
 .hero-bg::after {
