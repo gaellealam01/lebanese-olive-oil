@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact &mdash; Oro Di Haikal Olive Oil</title>
-  <meta name="description" content="Get in touch with Oro Di Haikal. Based in Zgharta, North Lebanon. Wholesale, retail, and partnership inquiries." />
+  <title>Contact &mdash; Oro Di Haikal</title>
+  <meta name="description" content="Get in touch with Oro Di Haikal. Zgharta, North Lebanon. Wholesale, retail, and partnership inquiries." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%235c6b3c'/><circle cx='16' cy='14' r='5' fill='%23d4a84b'/></svg>" type="image/svg+xml" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%232d3a1e'/><circle cx='16' cy='14' r='5' fill='%23b59540'/></svg>" type="image/svg+xml" />
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header class="site-header" id="header">
     <nav class="nav-inner">
       <a href="index.html" class="logo">Oro Di <span>Haikal</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 12h18M3 6h18M3 18h18"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
@@ -30,51 +29,53 @@
     </nav>
   </header>
 
-  <main id="main-content">
+  <main id="main">
+
     <section class="page-hero">
       <div class="container">
         <h1>Say Hello</h1>
-        <p>We&rsquo;re a small family operation. We read every message.</p>
+        <p>We read every message.</p>
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="s s--white">
       <div class="container">
-        <div class="contact-layout fade-in">
-          <div class="contact-info">
+        <div class="contact-grid reveal">
+          <div class="contact-side">
             <h2>Direct Line</h2>
-            <p>Whether you want to stock the Oil, place a bulk order, ask about the harvest, or just tell us how you used it last night&mdash;we&rsquo;d love to hear from you.</p>
-            <ul class="contact-details">
-              <li><strong>Email</strong><br /><a href="mailto:hello@orodihaikal.com">hello@orodihaikal.com</a></li>
-              <li><strong>Based in</strong><br />Zgharta, North Lebanon</li>
-              <li><strong>Wholesale</strong><br />Write to us for pricing on cases of 6+</li>
+            <p>Whether you want to stock the Oil, place a bulk order, ask about the harvest, or tell us how you used it last night&mdash;we&rsquo;d love to hear from you.</p>
+            <ul class="contact-list">
+              <li><span class="label">Email</span><a href="mailto:hello@orodihaikal.com">hello@orodihaikal.com</a></li>
+              <li><span class="label">Based in</span>Zgharta, North Lebanon</li>
+              <li><span class="label">Wholesale</span>Write to us for cases of 6+</li>
             </ul>
           </div>
-          <div class="contact-wrap">
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="you@example.com" />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Retail, wholesale, or just saying hello" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="What can we help with?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-            <div class="form-message" id="formMessage" role="status"></div>
-          </form>
+          <div class="form-wrap">
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Retail, wholesale, or just saying hello" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="What can we help with?"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <div class="form-msg" id="formMsg" role="status"></div>
+            </form>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -82,7 +83,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">Oro Di <span>Haikal</span></div>
-          <p>Extra virgin Olive Oil from the ancient groves of Zgharta, North Lebanon. Cold-pressed the same day. Nothing else.</p>
+          <p>Extra virgin Olive Oil from the ancient groves of Zgharta, North Lebanon. A new chapter rooted in ancient land.</p>
         </div>
         <div class="footer-links">
           <h4>Explore</h4>
@@ -109,34 +110,18 @@
   <script src="js/main.js"></script>
   <script>
     (function() {
-      var form = document.getElementById('contactForm');
-      var messageEl = document.getElementById('formMessage');
-      if (!form || !messageEl) return;
-
-      form.addEventListener('submit', function(e) {
+      var f = document.getElementById('contactForm');
+      var m = document.getElementById('formMsg');
+      if (!f || !m) return;
+      f.addEventListener('submit', function(e) {
         e.preventDefault();
-        var name = document.getElementById('name').value.trim();
-        var email = document.getElementById('email').value.trim();
-        var message = document.getElementById('message').value.trim();
-
-        messageEl.classList.remove('success', 'error');
-        messageEl.textContent = '';
-
-        if (!name || !email || !message) {
-          messageEl.classList.add('error');
-          messageEl.textContent = 'Please fill in name, email, and message.';
-          return;
-        }
-
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          messageEl.classList.add('error');
-          messageEl.textContent = 'Please enter a valid email address.';
-          return;
-        }
-
-        messageEl.classList.add('success');
-        messageEl.textContent = 'Sent. We\u2019ll be in touch soon.';
-        form.reset();
+        var n = document.getElementById('name').value.trim();
+        var em = document.getElementById('email').value.trim();
+        var msg = document.getElementById('message').value.trim();
+        m.className = 'form-msg'; m.textContent = '';
+        if (!n || !em || !msg) { m.className = 'form-msg err'; m.textContent = 'Please fill in name, email, and message.'; return; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) { m.className = 'form-msg err'; m.textContent = 'Please enter a valid email.'; return; }
+        m.className = 'form-msg ok'; m.textContent = 'Sent. We\u2019ll be in touch soon.'; f.reset();
       });
     })();
   </script>

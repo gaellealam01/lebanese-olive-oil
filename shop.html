@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop &mdash; Oro Di Haikal Olive Oil</title>
-  <meta name="description" content="500 ml extra virgin olive oil from the Plain of Zgharta, North Lebanon. Green, peppery, vibrant. Cold-pressed the same day as harvest." />
+  <title>Shop &mdash; Oro Di Haikal</title>
+  <meta name="description" content="500 ml extra virgin olive oil from Zgharta, North Lebanon. Green, peppery, vibrant. Cold-pressed the same day." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%235c6b3c'/><circle cx='16' cy='14' r='5' fill='%23d4a84b'/></svg>" type="image/svg+xml" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%232d3a1e'/><circle cx='16' cy='14' r='5' fill='%23b59540'/></svg>" type="image/svg+xml" />
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header class="site-header" id="header">
     <nav class="nav-inner">
       <a href="index.html" class="logo">Oro Di <span>Haikal</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 12h18M3 6h18M3 18h18"/>
-        </svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
@@ -30,7 +29,8 @@
     </nav>
   </header>
 
-  <main id="main-content">
+  <main id="main">
+
     <section class="page-hero">
       <div class="container">
         <h1>The Oil</h1>
@@ -38,32 +38,36 @@
       </div>
     </section>
 
-    <section class="product-section">
+    <section class="s s--white">
       <div class="container">
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://picsum.photos/seed/oliveoil/600/750" loading="lazy" alt="Oro Di Haikal Extra Virgin Olive Oil bottle" width="600" height="750" />
+        <div class="product reveal">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacdc50f24?w=800&q=80" alt="Oro Di Haikal Extra Virgin Olive Oil" loading="lazy" />
           </div>
-          <div class="product-details">
+          <div class="product-info">
             <h2>Extra Virgin Olive Oil</h2>
-            <p class="product-meta">500&nbsp;ml &middot; Single Origin &middot; Zgharta, North Lebanon</p>
-            <p class="price">$24.00</p>
-            <p>This Oil is the stuff of the land. Grown on the same sun-drenched plain where Phoenicians once pressed olives and shipped them across the Mediterranean. Picked by hand at early harvest. Cold-pressed the same day.</p>
-            <p>The result is luminous and green&mdash;peppery at the back of the throat, bright and grassy on the tongue, with a finish that softens into something almost sweet. This is what Olive Oil is supposed to taste like.</p>
+            <span class="label">500 ml &middot; Single Origin &middot; Zgharta, North Lebanon</span>
+            <p class="price">$24</p>
+            <p>This Oil is the stuff of the land. Grown on the same sun-drenched plain where Phoenicians once pressed olives and shipped them west. Picked by hand at early harvest. Cold-pressed the same day.</p>
+            <p>Luminous and green&mdash;peppery at the back of the throat, bright and grassy on the tongue, with a finish that softens into something almost sweet. This is what Olive Oil is supposed to taste like.</p>
             <p><strong>For dipping, drizzling, and finishing.</strong> Over labneh, warm bread with za&rsquo;atar, hummus, grilled halloumi, roasted vegetables, eggs. Use it on everything&mdash;generously.</p>
-            <p class="product-meta">Early harvest &middot; Cold-pressed the same day &middot; Unfiltered &middot; No blending, no additives</p>
-            <form class="product-form" id="productForm">
-              <div class="quantity-row">
-                <label for="qty">Quantity</label>
+            <span class="label" style="margin-top:0.5rem;display:block">Early harvest &middot; Cold-pressed same day &middot; Unfiltered &middot; No additives</span>
+            <form class="product-form" id="productForm" style="margin-top:2rem">
+              <div class="qty-row">
+                <label for="qty">Qty</label>
                 <input type="number" id="qty" name="qty" min="1" max="12" value="1" />
               </div>
-              <button type="submit" class="btn btn-primary">Add to Cart</button>
-              <p class="cart-feedback" id="cartFeedback" role="status" aria-live="polite"></p>
+              <button type="submit" class="btn btn-primary" style="width:100%">Add to Cart</button>
+              <p class="cart-msg" id="cartMsg" role="status" aria-live="polite"></p>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Lifestyle image -->
+    <img class="full-img" src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=1600&q=80" alt="Mediterranean table" loading="lazy" />
+
   </main>
 
   <footer class="site-footer">
@@ -71,7 +75,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="logo">Oro Di <span>Haikal</span></div>
-          <p>Extra virgin Olive Oil from the ancient groves of Zgharta, North Lebanon. Cold-pressed the same day. Nothing else.</p>
+          <p>Extra virgin Olive Oil from the ancient groves of Zgharta, North Lebanon. A new chapter rooted in ancient land.</p>
         </div>
         <div class="footer-links">
           <h4>Explore</h4>
@@ -98,21 +102,17 @@
   <script src="js/main.js"></script>
   <script>
     (function() {
-      var form = document.getElementById('productForm');
-      var feedback = document.getElementById('cartFeedback');
-      if (!form || !feedback) return;
-      form.addEventListener('submit', function(e) {
+      var f = document.getElementById('productForm');
+      var m = document.getElementById('cartMsg');
+      if (!f || !m) return;
+      f.addEventListener('submit', function(e) {
         e.preventDefault();
-        var qty = document.getElementById('qty').value;
-        var n = parseInt(qty, 10);
-        feedback.textContent = n === 1
-          ? '1 bottle added to cart. (Demo\u2014checkout not connected.)'
-          : n + ' bottles added to cart. (Demo\u2014checkout not connected.)';
-        feedback.classList.add('visible');
-        setTimeout(function() {
-          feedback.classList.remove('visible');
-          feedback.textContent = '';
-        }, 5000);
+        var n = parseInt(document.getElementById('qty').value, 10);
+        m.textContent = n === 1
+          ? '1 bottle added. (Demo\u2014checkout not connected.)'
+          : n + ' bottles added. (Demo\u2014checkout not connected.)';
+        m.classList.add('show');
+        setTimeout(function() { m.classList.remove('show'); m.textContent = ''; }, 5000);
       });
     })();
   </script>
